@@ -1,1 +1,1 @@
-web: python -m sitebilder.py
+web: python sitebulder.py
