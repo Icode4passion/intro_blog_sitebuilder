@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>{{ page.title }}</h2>
+    <b>{{page.author}}</b>
+    <small> Published it {{ page.date.strftime('%A, %d %B, %Y') }} </small>
+    <small> and belongs <em>{{ page.category }}</em> category.</small>
+    {{ page.html|safe }}
+{% endblock content %}

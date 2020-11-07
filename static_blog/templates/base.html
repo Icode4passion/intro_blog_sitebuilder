@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/retro.css') }}">
+    <link rel="icon" href="data:;base64,=">
+    
+</head>
+<body>               
+            
+                <!-- <li><a href="{{ url_for("about") }}">About</a></li> -->
+              <a href="{{ url_for('blog') }}">Blog</a> 
+                <!-- <li><a href="{{ url_for("contact") }}">Contact</a></li> -->
+
+    {% block content %}
+    <div>
+        <div>
+            Default Content
+        </div>
+    </div>
+    {% endblock %}
+    
+</body>
+</html>

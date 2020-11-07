@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+<!-- {% with pages=pages %}
+    {% include "_list.html" %}
+{% endwith %} -->
+
+<div class="container">
+    <h2></h2>
+    <ul>
+        {% for page in pages%}
+            <li>
+                <a href="{{ url_for('page',path=page.path) }}">{{ page.title }}</a>
+            </li>
+        {% else  %}
+         <li>
+             No Content
+         </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+<div>
+    <a href="{{ url_for('index') }}">BacktoHome</a>
+</div>
+ 
+
+{% endblock %}
