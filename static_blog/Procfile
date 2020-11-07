@@ -1,1 +1,1 @@
-web: python sitebulder.py
+web: gunicorn sitebulder:app
